@@ -5,15 +5,24 @@ body {
 .main-body {
   background-color: rgba(red, green, blue, 0);
   background-color: rgb(238,239,234);
-  width: 85%;
+  width: 75%;
   height: 100%;
   margin: auto;
-  padding: 10px;
+  padding: 10px 10%;
+}
+.video-wrap {
   position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
 }
 .video {
-  display: block;
-  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 .skip-video-button {
   display: block;
