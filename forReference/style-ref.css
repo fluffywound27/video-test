@@ -1,14 +1,12 @@
 body {
-  background-color: white;
-  margin: 0;
+  background-color: rgb(50, 50, 50);
 }
 .main-body {
-  background-color: rgba(red, green, blue, 0);
-  background-color: rgb(238,239,234);
+  background-color: gray;
   width: 85%;
-  height: 100%;
+  height: 1000px;
   margin: auto;
-  padding: 10px;
+  padding: 150px 0;
   position: relative;
 }
 .video {
@@ -17,19 +15,18 @@ body {
 }
 .skip-video-button {
   display: block;
-  background-color: rgba(red, green, blue, 0);
-  color: rgb(147,142,148);
+  background-color: blue;
   padding: 10px 20px;
-  border: 6px solid white;
+  border-radius: 40px;
+  border: none;
   font-family: arial;
   font-size: 1rem;
+  font-weight: bold;
   margin: 10px auto;
   cursor: pointer;
-  transition: 0.4s;
 }
 .skip-video-button:hover {
-  border-color: rgb(92,79,103);
-  color: rgb(92,79,103);
+  background-color: lightblue;
 }
 .menu {
   position: absolute;
