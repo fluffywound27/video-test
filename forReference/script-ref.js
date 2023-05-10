@@ -42,5 +42,4 @@ function onPlayerStateChange(event) {
 
 skipButtonElem.addEventListener('click', () => {
   player.seekTo(36);
-  menuElem.classList.remove('menu-vis')
 });

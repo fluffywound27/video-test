@@ -1,4 +1,6 @@
 const skipButtonElem = document.querySelector('.js-skip-button');
+const overlayElem = document.querySelector('.overlay-body');
+const overlayReplayButton = document.querySelector('#js-replay-button');
 
 var tag = document.createElement('script');
 
@@ -29,6 +31,12 @@ function onPlayerStateChange(event) {
 };
 
 skipButtonElem.addEventListener('click', () => {
-  player.seekTo(36);
+  player.seekTo(39);
+  overlayElem.classList.remove('overlay-display');
 });
+
+overlayReplayButton.addEventListener('click', () => {
+  overlayElem.classList.add('overlay-display');
+  player.seekTo(0)
+})
 
